@@ -5,7 +5,7 @@ public class Util {
     public void validateMinutes(String minutes) throws IllegalArgumentException{
         int value =  parsePositiveInteger(minutes);
         if(value < 0 || value >= 60)
-            throw new IllegalArgumentException(String.format("%s is not between 0 and 60 ", minutes));
+            throw new IllegalArgumentException(String.format("Invalid minutes entered,%s is not between 0 and 60 ", minutes));
 
     }
 

@@ -8,11 +8,6 @@ public class MilitaryTimeConverter implements TimeConverter {
         _util = new Util();
     }
 
-    public String toMilitaryTime(String fromTime){
-        _validator.validateTime(fromTime);
-        return convertTime(fromTime);
-    }
-
     @Override
     public String convertTime(String fromTime) {
         _validator.validateTime(fromTime);

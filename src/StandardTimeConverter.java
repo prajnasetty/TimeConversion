@@ -19,9 +19,15 @@ public class StandardTimeConverter implements TimeConverter{
         int minutes = minutesSinceMidnight%60;
         int hours = minutesSinceMidnight/60;
         String meridiam = "AM";
-        if(hours >=12){
+        if(hours >12){
             hours = hours-12;
             meridiam = "PM";
+        }
+        else if(hours == 12){
+            meridiam = "PM";
+        }
+        else if(hours == 0){
+            hours = 12;
         }
         StringBuilder sb = new StringBuilder();
         sb.append(_util.padZero(hours)).append(":").append(_util.padZero(minutes)).append(" ").append(meridiam);

@@ -47,6 +47,6 @@ public class MilitaryTimeValidator implements TimeValidator {
     private void validateHours() throws IllegalArgumentException{
        int hourValue =  _util.parsePositiveInteger(hours);
         if(hourValue < 0 || hourValue >= 24)
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException(String.format("Invalid hour entered,%s is not between 0 and 23 ", hours));
     }
 }

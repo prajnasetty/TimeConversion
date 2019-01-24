@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Enter input time format S for Standard and M for military:");
         String inputTimeFormat = scanner.nextLine();
 
-        System.out.println("Please enter te time(eg: '0000' or '12:00 AM' ):");
+        System.out.println("Please enter the time(eg: '0000' or '12:00 AM' ):");
         String inTime = scanner.nextLine();
 
         System.out.println("Please enter the time format for conversion S for Standard and M for military:");
